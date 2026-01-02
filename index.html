@@ -55,6 +55,12 @@
         a:hover {
             text-decoration: underline;
         }
+        .highlight {
+            background-color: #fef5e7;
+            padding: 15px;
+            border-left: 4px solid #f6ad55;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -63,57 +69,101 @@
         <p class="last-updated">Last updated: December 2025</p>
 
         <h2>1. Introduction</h2>
-        <p>Welcome to OtarioVPN ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our VPN service.</p>
+        <p>Welcome to OtarioVPN ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our VPN application.</p>
 
-        <h2>2. Information We Collect (No-Logs Policy)</h2>
-        <p>We respect your privacy and enforce a strict no-logs policy. To provide our service, we only collect the absolute minimum information required:</p>
+        <h2>2. Information We Collect</h2>
+        <p>We strive for minimal data collection necessary to provide our services:</p>
+
+        <h3>Authentication Data</h3>
         <ul>
-            <li><strong>Account Information:</strong> Your email address and account credentials used for signing up and logging in.</li>
-            <li><strong>Payment Information:</strong> When you subscribe, our third-party payment processors (like Google Play or Apple App Store) collect payment information. We do not store your full credit card details.</li>
-            <li><strong>Aggregated & Anonymized Data:</strong> We may collect anonymous, aggregated data for service improvement, such as total bandwidth usage or server load statistics. This data cannot be tied back to any specific user.</li>
+            <li>Email addresses for account creation</li>
+            <li>Firebase authentication tokens</li>
+        </ul>
+
+        <h3>User Account Data</h3>
+        <ul>
+            <li>User unique identifier (UID)</li>
+            <li>Email address</li>
+            <li>Premium subscription status</li>
+            <li>Administrator status (for service accounts)</li>
+            <li>Account creation date</li>
+        </ul>
+
+        <h3>Device Data</h3>
+        <ul>
+            <li>Device identifier</li>
+            <li>Device name</li>
+            <li>Platform (iOS/Android)</li>
+            <li>Last login time</li>
+            <li>Device record creation date</li>
+        </ul>
+
+        <h3>Free User Usage Data</h3>
+        <ul>
+            <li>IP address for tracking free usage limits (30 minutes)</li>
+            <li>Remaining usage time in seconds</li>
+        </ul>
+
+        <h3>Subscription Data</h3>
+        <ul>
+            <li>Active subscription status via Adapty</li>
+            <li>Payment information (processed by Google Play/App Store)</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
-        <p>We use the minimal information we collect in the following ways:</p>
+        <p>We use the collected information as follows:</p>
         <ul>
-            <li>To provide, maintain, and operate our VPN service.</li>
-            <li>To process payments and manage your subscription.</li>
-            <li>To communicate with you regarding your account or our service (e.g., for customer support).</li>
-            <li>To improve and optimize our service performance and features.</li>
-            <li>To comply with legal obligations.</li>
+            <li>To provide VPN services</li>
+            <li>To authenticate users</li>
+            <li>To manage devices (maximum 3 devices per account)</li>
+            <li>To enforce free usage limits</li>
+            <li>To process payments and manage subscriptions</li>
+            <li>To improve app performance</li>
+            <li>To comply with legal requirements</li>
         </ul>
 
         <h2>4. Information Sharing and Disclosure</h2>
         <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy:</p>
         <ul>
-            <li>With trusted service providers who assist us in operating our service (e.g., payment processors), under strict confidentiality agreements.</li>
-            <li>When required by law or to protect our rights and the safety of others.</li>
-            <li>In connection with a business transfer, merger, or acquisition.</li>
+            <li>With trusted service providers who assist us in operating our service (Firebase, Adapty)</li>
+            <li>When required by law or to protect our rights</li>
+            <li>In connection with a business transfer or acquisition</li>
         </ul>
 
         <h2>5. Data Security</h2>
         <p>We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
 
-        <h2>6. Strict No-Logs Policy</h2>
-        <p>OtarioVPN is a strict no-logs VPN service. This means we **DO NOT** store or track:</p>
+        <h2>6. Logging Policy</h2>
+        <div class="highlight">
+            <p><strong>OtarioVPN strives for minimal data collection:</strong></p>
+        </div>
+
+        <p><strong>We DO NOT store:</strong></p>
         <ul>
-            <li>Your real IP address or the VPN IP address assigned to you.</li>
-            <li>Your browsing history or DNS queries.</li>
-            <li>Connection timestamps, session duration, or bandwidth usage details per user.</li>
+            <li>User real IP addresses (except for tracking free user limits)</li>
+            <li>Browsing history or DNS queries</li>
+            <li>Detailed bandwidth statistics per user</li>
+            <li>Full connection logs</li>
         </ul>
-        <p>We only retain minimal account information necessary for service operation, as stated in Section 2.</p>
+
+        <p><strong>We only store:</strong></p>
+        <ul>
+            <li>Necessary data for service operation (accounts, devices)</li>
+            <li>Aggregated data for service improvement</li>
+        </ul>
 
         <h2>7. Your Rights</h2>
         <p>Depending on your location, you may have the following rights regarding your personal information:</p>
         <ul>
-            <li><strong>Access:</strong> Request access to the personal data we hold about you.</li>
-            <li><strong>Rectification:</strong> Request correction of inaccurate data.</li>
-            <li><strong>Deletion:</strong> Request the deletion of your account and associated personal data.</li>
-            <li><strong>Objection:</strong> Object to the processing of your data in certain circumstances.</li>
+            <li><strong>Access:</strong> Request access to your personal data</li>
+            <li><strong>Rectification:</strong> Request correction of inaccurate information</li>
+            <li><strong>Deletion:</strong> Request deletion of your personal data</li>
+            <li><strong>Portability:</strong> Request transfer of your data</li>
+            <li><strong>Objection:</strong> Object to processing of your data</li>
         </ul>
 
         <h2>8. Cookies and Tracking</h2>
-        <p>We may use essential cookies on our website for basic functionality, such as keeping you logged in. We do not use tracking cookies for advertising purposes. You can control cookie preferences through your browser settings.</p>
+        <p>We may use essential cookies for basic app functionality. We do not use tracking cookies for advertising purposes. You can control cookie preferences through your browser settings.</p>
 
         <h2>9. Children's Privacy</h2>
         <p>Our service is not intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18.</p>
